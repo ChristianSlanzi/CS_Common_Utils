@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CS_Common_Utils_Example' do
+  pod 'CS_Common_Utils', :path => '../'
+
+  target 'CS_Common_Utils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
