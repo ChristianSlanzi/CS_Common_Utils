@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244F02DA2542279E00FACB93 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F02D92542279E00FACB93 /* Debouncer.swift */; };
+		244F02E32542297200FACB93 /* NSLayoutConstraint+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F02E22542297200FACB93 /* NSLayoutConstraint+Ext.swift */; };
 		24782D0E25374048003DE516 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24782CBC25374047003DE516 /* UIImage+Ext.swift */; };
 		24782D0F25374048003DE516 /* UserDefaultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24782CBE25374047003DE516 /* UserDefaultExtensions.swift */; };
 		24782D1025374048003DE516 /* UIScrollView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24782CC025374047003DE516 /* UIScrollView+Ext.swift */; };
@@ -87,6 +89,8 @@
 /* Begin PBXFileReference section */
 		0296494FDDDE038EB43AEC4622403BE0 /* Pods-CS_Common_Utils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CS_Common_Utils_Tests.modulemap"; sourceTree = "<group>"; };
 		224F17C97F8C45634D419409C59B3DB0 /* Pods-CS_Common_Utils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CS_Common_Utils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		244F02D92542279E00FACB93 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		244F02E22542297200FACB93 /* NSLayoutConstraint+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Ext.swift"; sourceTree = "<group>"; };
 		24782CBC25374047003DE516 /* UIImage+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		24782CBE25374047003DE516 /* UserDefaultExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtensions.swift; sourceTree = "<group>"; };
 		24782CC025374047003DE516 /* UIScrollView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Ext.swift"; sourceTree = "<group>"; };
@@ -213,33 +217,50 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		244F02D82542278C00FACB93 /* Debounce */ = {
+			isa = PBXGroup;
+			children = (
+				244F02D92542279E00FACB93 /* Debouncer.swift */,
+			);
+			path = Debounce;
+			sourceTree = "<group>";
+		};
+		244F02E12542294500FACB93 /* NSLayoutConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				244F02E22542297200FACB93 /* NSLayoutConstraint+Ext.swift */,
+			);
+			path = NSLayoutConstraint;
+			sourceTree = "<group>";
+		};
 		24782CBA25374047003DE516 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				24782CBB25374047003DE516 /* UIImage */,
-				24782CBD25374047003DE516 /* UserDefaults */,
-				24782CBF25374047003DE516 /* UIScrollView */,
-				24782CC125374047003DE516 /* UIButton */,
-				24782CC325374047003DE516 /* UIColor */,
-				24782CC525374047003DE516 /* UIAlertController */,
-				24782CC725374047003DE516 /* UIView */,
 				24782CC925374047003DE516 /* Array */,
-				24782CCB25374047003DE516 /* UIStoryboard */,
-				24782CCD25374047003DE516 /* UIFont */,
 				24782CCF25374047003DE516 /* Bundle */,
-				24782CD125374047003DE516 /* Encodable */,
-				24782CD325374047003DE516 /* UICollectionView */,
-				24782CD525374047003DE516 /* URL */,
-				24782CD725374047003DE516 /* UIImageView */,
-				24782CD925374047003DE516 /* UIViewController */,
-				24782CDC25374047003DE516 /* UITableView */,
+				24782CE725374047003DE516 /* CALayer */,
 				24782CDE25374047003DE516 /* CGFloat */,
 				24782CE025374047003DE516 /* Date&Time */,
-				24782CE425374047003DE516 /* String */,
-				24782CE725374047003DE516 /* CALayer */,
+				24782CD125374047003DE516 /* Encodable */,
+				244F02E12542294500FACB93 /* NSLayoutConstraint */,
 				24782CEA25374048003DE516 /* NSObject */,
 				24782CEC25374048003DE516 /* Scene */,
+				24782CE425374047003DE516 /* String */,
+				24782CC525374047003DE516 /* UIAlertController */,
+				24782CC125374047003DE516 /* UIButton */,
+				24782CD325374047003DE516 /* UICollectionView */,
+				24782CC325374047003DE516 /* UIColor */,
+				24782CCD25374047003DE516 /* UIFont */,
+				24782CBB25374047003DE516 /* UIImage */,
+				24782CD725374047003DE516 /* UIImageView */,
+				24782CBF25374047003DE516 /* UIScrollView */,
 				24782CEE25374048003DE516 /* UIStackView */,
+				24782CCB25374047003DE516 /* UIStoryboard */,
+				24782CDC25374047003DE516 /* UITableView */,
+				24782CC725374047003DE516 /* UIView */,
+				24782CD925374047003DE516 /* UIViewController */,
+				24782CD525374047003DE516 /* URL */,
+				24782CBD25374047003DE516 /* UserDefaults */,
 			);
 			name = Extensions;
 			path = CS_Common_Utils/Classes/Extensions;
@@ -481,13 +502,14 @@
 			children = (
 				24782D0025374048003DE516 /* Observable.swift */,
 			);
-			name = DataBinding;
-			path = CS_Common_Utils/Classes/DataBinding;
+			path = DataBinding;
 			sourceTree = "<group>";
 		};
 		24782D0125374048003DE516 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				244F02D82542278C00FACB93 /* Debounce */,
+				24782CFF25374048003DE516 /* DataBinding */,
 				24782D0225374048003DE516 /* FileSystem */,
 				24782D0425374048003DE516 /* FieldValidator */,
 				24782D0C25374048003DE516 /* CollectionViews */,
@@ -613,7 +635,6 @@
 			isa = PBXGroup;
 			children = (
 				24782CFE25374048003DE516 /* Constants.swift */,
-				24782CFF25374048003DE516 /* DataBinding */,
 				24782CBA25374047003DE516 /* Extensions */,
 				24782CF025374048003DE516 /* Functional */,
 				24782D0125374048003DE516 /* Helpers */,
@@ -804,9 +825,11 @@
 				24782D3525374048003DE516 /* CompositionWithoutOperators.swift in Sources */,
 				24782D3625374048003DE516 /* Constants.swift in Sources */,
 				24782D1225374048003DE516 /* UIColor+Ext.swift in Sources */,
+				244F02E32542297200FACB93 /* NSLayoutConstraint+Ext.swift in Sources */,
 				24782D3F25374048003DE516 /* CollectionViewHelper.swift in Sources */,
 				24782D3E25374048003DE516 /* RequiredRule.swift in Sources */,
 				24782D0E25374048003DE516 /* UIImage+Ext.swift in Sources */,
+				244F02DA2542279E00FACB93 /* Debouncer.swift in Sources */,
 				24782D2F25374048003DE516 /* GettersKeyPaths.swift in Sources */,
 				24782D2225374048003DE516 /* Date+Ext.swift in Sources */,
 				AF035530EB3C250EA851F53A04FEBA11 /* CS_Common_Utils-dummy.m in Sources */,
