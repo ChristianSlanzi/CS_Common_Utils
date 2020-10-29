@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UITextField {
+public extension UITextField {
     func underlined() {
         let border = CALayer()
         let width = CGFloat(1.0)
@@ -21,7 +21,7 @@ extension UITextField {
     }
 }
 
-extension UITextField {
+public extension UITextField {
   func setBottomBorder() {
     borderStyle = .none
     layer.backgroundColor = UIColor.white.cgColor
