@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244E944E254B4285008AE146 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E944D254B4285008AE146 /* UITextField+Ext.swift */; };
+		244E9457254B45AB008AE146 /* UITextView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9456254B45AB008AE146 /* UITextView+Ext.swift */; };
 		244F02DA2542279E00FACB93 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F02D92542279E00FACB93 /* Debouncer.swift */; };
 		244F02E32542297200FACB93 /* NSLayoutConstraint+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F02E22542297200FACB93 /* NSLayoutConstraint+Ext.swift */; };
 		24782D0E25374048003DE516 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24782CBC25374047003DE516 /* UIImage+Ext.swift */; };
@@ -89,6 +91,8 @@
 /* Begin PBXFileReference section */
 		0296494FDDDE038EB43AEC4622403BE0 /* Pods-CS_Common_Utils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CS_Common_Utils_Tests.modulemap"; sourceTree = "<group>"; };
 		224F17C97F8C45634D419409C59B3DB0 /* Pods-CS_Common_Utils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CS_Common_Utils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		244E944D254B4285008AE146 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		244E9456254B45AB008AE146 /* UITextView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Ext.swift"; sourceTree = "<group>"; };
 		244F02D92542279E00FACB93 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
 		244F02E22542297200FACB93 /* NSLayoutConstraint+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Ext.swift"; sourceTree = "<group>"; };
 		24782CBC25374047003DE516 /* UIImage+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
@@ -217,6 +221,22 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		244E944C254B4258008AE146 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				244E944D254B4285008AE146 /* UITextField+Ext.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		244E9455254B458E008AE146 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				244E9456254B45AB008AE146 /* UITextView+Ext.swift */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
 		244F02D82542278C00FACB93 /* Debounce */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +277,8 @@
 				24782CEE25374048003DE516 /* UIStackView */,
 				24782CCB25374047003DE516 /* UIStoryboard */,
 				24782CDC25374047003DE516 /* UITableView */,
+				244E944C254B4258008AE146 /* UITextField */,
+				244E9455254B458E008AE146 /* UITextView */,
 				24782CC725374047003DE516 /* UIView */,
 				24782CD925374047003DE516 /* UIViewController */,
 				24782CD525374047003DE516 /* URL */,
@@ -833,6 +855,7 @@
 				24782D2F25374048003DE516 /* GettersKeyPaths.swift in Sources */,
 				24782D2225374048003DE516 /* Date+Ext.swift in Sources */,
 				AF035530EB3C250EA851F53A04FEBA11 /* CS_Common_Utils-dummy.m in Sources */,
+				244E9457254B45AB008AE146 /* UITextView+Ext.swift in Sources */,
 				24782D2A25374048003DE516 /* UIStackView+Ext.swift in Sources */,
 				24782D1A25374048003DE516 /* UICollectionView+Ext.swift in Sources */,
 				24782D1825374048003DE516 /* Bundle+Ext.swift in Sources */,
@@ -852,6 +875,7 @@
 				24782D1B25374048003DE516 /* URL+Document.swift in Sources */,
 				24782D2325374048003DE516 /* Date+ISO8601.swift in Sources */,
 				24782D3C25374048003DE516 /* EmailRule.swift in Sources */,
+				244E944E254B4285008AE146 /* UITextField+Ext.swift in Sources */,
 				24782D3225374048003DE516 /* FlatMaps.swift in Sources */,
 				24782D1425374048003DE516 /* UIView+Ext.swift in Sources */,
 				24782D2425374048003DE516 /* String+Ext.swift in Sources */,
