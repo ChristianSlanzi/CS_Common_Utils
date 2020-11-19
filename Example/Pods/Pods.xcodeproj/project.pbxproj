@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242C5950255E973F00560D3A /* Data+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C594F255E973F00560D3A /* Data+Ext.swift */; };
+		242C5955255E97AB00560D3A /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C5954255E97AB00560D3A /* MathUtils.swift */; };
 		244E944E254B4285008AE146 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E944D254B4285008AE146 /* UITextField+Ext.swift */; };
 		244E9457254B45AB008AE146 /* UITextView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9456254B45AB008AE146 /* UITextView+Ext.swift */; };
 		244F02DA2542279E00FACB93 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F02D92542279E00FACB93 /* Debouncer.swift */; };
@@ -60,6 +62,7 @@
 		24782D3D25374048003DE516 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24782D0A25374048003DE516 /* Rule.swift */; };
 		24782D3E25374048003DE516 /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24782D0B25374048003DE516 /* RequiredRule.swift */; };
 		24782D3F25374048003DE516 /* CollectionViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24782D0D25374048003DE516 /* CollectionViewHelper.swift */; };
+		24A0334825520EDE002BE8A0 /* Bundle+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0334725520EDE002BE8A0 /* Bundle+Decoding.swift */; };
 		7A1410EE2DCAD9E664C398807DCB6B46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		7F35890D977A9BCF0D2816F50AEB8A3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		7F39904CC3F1C04EBB3619303F0CFDC8 /* Pods-CS_Common_Utils_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 611BA28A567908722F2B5FC34E767BD5 /* Pods-CS_Common_Utils_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -91,6 +94,8 @@
 /* Begin PBXFileReference section */
 		0296494FDDDE038EB43AEC4622403BE0 /* Pods-CS_Common_Utils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CS_Common_Utils_Tests.modulemap"; sourceTree = "<group>"; };
 		224F17C97F8C45634D419409C59B3DB0 /* Pods-CS_Common_Utils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CS_Common_Utils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		242C594F255E973F00560D3A /* Data+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Ext.swift"; sourceTree = "<group>"; };
+		242C5954255E97AB00560D3A /* MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
 		244E944D254B4285008AE146 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		244E9456254B45AB008AE146 /* UITextView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Ext.swift"; sourceTree = "<group>"; };
 		244F02D92542279E00FACB93 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
@@ -144,6 +149,7 @@
 		24782D0A25374048003DE516 /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		24782D0B25374048003DE516 /* RequiredRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredRule.swift; sourceTree = "<group>"; };
 		24782D0D25374048003DE516 /* CollectionViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewHelper.swift; sourceTree = "<group>"; };
+		24A0334725520EDE002BE8A0 /* Bundle+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decoding.swift"; sourceTree = "<group>"; };
 		25804D33C862AC165B810360D6E11370 /* Pods-CS_Common_Utils_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CS_Common_Utils_Tests-Info.plist"; sourceTree = "<group>"; };
 		29868D0BDC5C3C034084C176D2DA23F2 /* Pods_CS_Common_Utils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Common_Utils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF571DDC2D324627AC8BC0A4802EBA5 /* Pods-CS_Common_Utils_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CS_Common_Utils_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -221,6 +227,14 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		242C594E255E971A00560D3A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				242C594F255E973F00560D3A /* Data+Ext.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		244E944C254B4258008AE146 /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +274,7 @@
 				24782CCF25374047003DE516 /* Bundle */,
 				24782CE725374047003DE516 /* CALayer */,
 				24782CDE25374047003DE516 /* CGFloat */,
+				242C594E255E971A00560D3A /* Data */,
 				24782CE025374047003DE516 /* Date&Time */,
 				24782CD125374047003DE516 /* Encodable */,
 				244F02E12542294500FACB93 /* NSLayoutConstraint */,
@@ -372,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				24782CD025374047003DE516 /* Bundle+Ext.swift */,
+				24A0334725520EDE002BE8A0 /* Bundle+Decoding.swift */,
 			);
 			path = Bundle;
 			sourceTree = "<group>";
@@ -657,6 +673,7 @@
 			isa = PBXGroup;
 			children = (
 				24782CFE25374048003DE516 /* Constants.swift */,
+				242C5954255E97AB00560D3A /* MathUtils.swift */,
 				24782CBA25374047003DE516 /* Extensions */,
 				24782CF025374048003DE516 /* Functional */,
 				24782D0125374048003DE516 /* Helpers */,
@@ -838,6 +855,7 @@
 			files = (
 				24782D3725374048003DE516 /* Observable.swift in Sources */,
 				24782D1E25374048003DE516 /* UIViewController+Ext.swift in Sources */,
+				24A0334825520EDE002BE8A0 /* Bundle+Decoding.swift in Sources */,
 				24782D3125374048003DE516 /* FunctionalKeyPaths.swift in Sources */,
 				24782D2825374048003DE516 /* NSObject+Ext.swift in Sources */,
 				24782D1725374048003DE516 /* UIFont+Ext.swift in Sources */,
@@ -859,6 +877,7 @@
 				24782D2A25374048003DE516 /* UIStackView+Ext.swift in Sources */,
 				24782D1A25374048003DE516 /* UICollectionView+Ext.swift in Sources */,
 				24782D1825374048003DE516 /* Bundle+Ext.swift in Sources */,
+				242C5955255E97AB00560D3A /* MathUtils.swift in Sources */,
 				24782D1925374048003DE516 /* Encodable+Dictionary.swift in Sources */,
 				24782D1625374048003DE516 /* UIStoryboard+Ext.swift in Sources */,
 				24782D0F25374048003DE516 /* UserDefaultExtensions.swift in Sources */,
@@ -890,6 +909,7 @@
 				24782D1D25374048003DE516 /* UIViewController+Child.swift in Sources */,
 				24782D3825374048003DE516 /* Path.swift in Sources */,
 				24782D2E25374048003DE516 /* FunctionalComposition.swift in Sources */,
+				242C5950255E973F00560D3A /* Data+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
